@@ -38,7 +38,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
     transition: color 0.3s;
     animation: slideTop 0.5s ease forwards;
     animation-delay: calc(0.2s * var(--i));
@@ -46,6 +46,31 @@ body {
 
 .navbar a:hover {
     color: #0ef;
+}
+
+/* donwload the cv */
+.download-cv {
+    padding: 8px 16px;
+    background-color: rgb(1, 36, 36);
+    color: white;
+    box-shadow: 0 0 15px cyan;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    animation: glow 2s infinite;
+    align-items: center;
+    gap: 8;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-cv i {
+    font-size: 1rem;
+}
+
+.download-cv:hover {
+    background-color: cyan;
+    transform: scale(1.05);
 }
 
 .img {
